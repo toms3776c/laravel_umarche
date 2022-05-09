@@ -3,4 +3,5 @@
         ヘッダー1
     </x-slot>
     コンポーネントテスト2
+    <x-test-class-base />
 </x-tests.app>
