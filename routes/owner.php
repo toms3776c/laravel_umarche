@@ -29,9 +29,6 @@ Route::get('/dashboard', function () {
     return view('owner.dashboard');
 })->middleware(['auth:owners'])->name('dashboard');
 
-Route::get('/component-test1', [ComponentTestController::class, 'showComponent1']);
-Route::get('/component-test2', [ComponentTestController::class, 'showComponent2']);
-
 
 Route::get('/register', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
